@@ -1,0 +1,84 @@
+#blueBack {
+    background-color: blue;
+    width: 400px;
+    height: 200px;
+    position: relative;
+
+   
+    
+}
+
+#sun {
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    background-color: yellow;
+    top: 70%;
+    left: 65%;
+    border-radius: 50% 50% 0% 0%;
+}
+
+#sunRay {
+    position: absolute;
+    width: 25%;
+    height: 35%;
+    top: 63%;
+    left: 62%;
+    border: 2px solid yellow;
+    border-radius: 50% 50% 0% 0%;
+    visibility: hidden;
+}
+
+#sunWhite {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    top: 55%;
+    left: 59.5%;
+    border: 2px solid yellow;
+    border-radius: 50% 50% 0% 0%;
+    visibility: hidden;
+}
+
+#ocean {
+    position: absolute;
+    height: 145%;
+    width: 100%;
+    background: lightblue;
+
+    --mask:
+    radial-gradient(9.6px at 50% calc(100% + 7.00px),#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) calc(50% - 10px) calc(50% - 3.5px + .5px)/20px 7px ,
+    radial-gradient(9.6px at 50% -7px,#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) 50% calc(50% + 3.5px)/20px 7px ;
+  -webkit-mask: var(--mask);
+         mask: var(--mask);
+}
+
+#oceanBack {
+    position: absolute;
+    top: 80%;
+    height: 20%;
+    width: 100%;
+    background: darkblue;
+
+    --mask:
+    radial-gradient(8.60px at 50% 12.00px,#000 99%,#0000 101%) calc(50% - 10px) 0/20px 100%,
+    radial-gradient(8.60px at 50% -7px,#0000 99%,#000 101%) 50% 5px/20px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+#waves {
+    position: absolute;
+    background-color: lightblue;
+    height: 10%;
+    width: 100%;
+
+}
+
+html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+  } 
