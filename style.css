@@ -1,5 +1,5 @@
 #blueBack {
-    background-color: blue;
+    background-color: #1da2d8;
     width: 400px;
     height: 200px;
     position: relative;
@@ -12,7 +12,7 @@
     position: absolute;
     width: 20%;
     height: 30%;
-    background-color: yellow;
+    background-color: #ff7b7b;
     top: 70%;
     left: 65%;
     border-radius: 50% 50% 0% 0%;
@@ -23,28 +23,55 @@
     width: 25%;
     height: 35%;
     top: 63%;
-    left: 62%;
-    border: 2px solid yellow;
+    left: 61.5%;
+    border: 4px solid #ffb58d;
+    border-style: solid solid none solid;
     border-radius: 50% 50% 0% 0%;
-    visibility: hidden;
+    visibility: hidden; 
 }
 
 #sunWhite {
     position: absolute;
-    width: 30%;
-    height: 40%;
+    width: 32%;
+    height: 43%;
     top: 55%;
-    left: 59.5%;
-    border: 2px solid yellow;
+    left: 58.5%;
+    border: 3px solid #ffc884;
+    border-style: solid solid none solid;
     border-radius: 50% 50% 0% 0%;
-    visibility: hidden;
+    visibility: hidden; 
+}
+
+#sunOuter {
+    position: absolute;
+    width: 38%;
+    height: 50%;
+    top: 45%;
+    left: 55.4%;
+    border: 3px solid #ffe4a4;
+    border-style: solid solid none solid;
+    border-radius: 50% 50% 0% 0%;
+    visibility: hidden; 
+}
+
+
+#sunOutest {
+    position: absolute;
+    width: 45%;
+    height: 55%;
+    top: 35%;
+    left: 52%;
+    border: 3px solid #f7ffb6;
+    border-style: solid solid none solid;
+    border-radius: 50% 50% 0% 0%;
+    visibility: hidden; 
 }
 
 #ocean {
     position: absolute;
     height: 145%;
     width: 100%;
-    background: lightblue;
+    background: #76b6c4;
 
     --mask:
     radial-gradient(9.6px at 50% calc(100% + 7.00px),#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) calc(50% - 10px) calc(50% - 3.5px + .5px)/20px 7px ,
@@ -58,7 +85,7 @@
     top: 80%;
     height: 20%;
     width: 100%;
-    background: darkblue;
+    background: #064273;
 
     --mask:
     radial-gradient(8.60px at 50% 12.00px,#000 99%,#0000 101%) calc(50% - 10px) 0/20px 100%,
@@ -69,7 +96,7 @@
 
 #waves {
     position: absolute;
-    background-color: lightblue;
+    background-color: #def3f6;
     height: 10%;
     width: 100%;
 

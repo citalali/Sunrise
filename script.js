@@ -1,46 +1,62 @@
 var onOffCounter = 0;
+var mouseOnWater = 0;
+var visibility = "visible";
 
 document.getElementById("sun").onmouseover = function() {
     sunShine()
 };
 
-document.getElementById("blueBack").onmouseover = function() {
-    wavyWaves()
-};
+//document.getElementById("blueBack").onmouseover = function() {
+  //  wavyWaves()
+//};
+
+//document.getElementById("blueBack").onmouseout = function() {
+   // wavesStop();
+//};
 
 function sunShine() {
-    if (onOffCounter == 0) {
-        setTimeout(() => {
-            document.getElementById("sunRay").style.visibility = "visible";
-        }, 200);
-        setTimeout(() => {
-            document.getElementById("sunWhite").style.visibility = "visible";
-        }, 400);
-        onOffCounter = 1;
+
+    setTimeout(() => {
+        document.getElementById("sunRay").style.visibility = visibility;
+    }, 100);
+    setTimeout(() => {
+        document.getElementById("sunWhite").style.visibility = visibility;
+    }, 200);
+    setTimeout(() => {
+        document.getElementById("sunOuter").style.visibility = visibility;
+    }, 300);
+    setTimeout(() => {
+        document.getElementById("sunOutest").style.visibility = visibility;
+    }, 400);
+
+    if (visibility == "visible"){
+        visibility = "hidden";
     }
     else {
-        setTimeout(() => {
-            document.getElementById("sunRay").style.visibility = "hidden";
-        }, 400);
-        setTimeout(() => {
-            document.getElementById("sunWhite").style.visibility = "hidden";
-        }, 200);
-        onOffCounter = 0;
+        visibility = "visible";
     }
+}
 
+
+
+function wavesStop() {
+    mouseOnWater = 0;
 }
 
 function wavyWaves() {
-    for (var i = 0; i < 100; i++) {
+    mouseOnWater = 1;
+   //while (mouseOnWater == 1) {
         setTimeout(() => {
             document.getElementById("ocean").style.backgroundColor = 'darkblue';
             document.getElementById("oceanBack").style.backgroundColor = 'white';
+            document.getElementById("sun").style.backgroundColor = "red";
         }, 200);
         setTimeout(() => {
             document.getElementById("ocean").style.backgroundColor = 'white';
             document.getElementById("oceanBack").style.backgroundColor = 'darkblue';
+            document.getElementById("sun").style.backgroundColor = "yellow";
         }, 400);
 }
 
-}
+//}
 
