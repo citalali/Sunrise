@@ -3,9 +3,32 @@
     width: 400px;
     height: 200px;
     position: relative;
+}
 
-   
-    
+h1 {
+    font-family:cursive;
+    font-weight:400;
+    font-variant: small-caps;
+    color:#064273;
+    position: absolute;
+    left: 5%;
+    top: -8%;
+}
+
+@keyframes sunriseText {
+    from {color: #064273;
+        }
+    to {color: #ff7b7b;}
+    0%,80% {
+        transform: rotateY(180deg) 
+      }
+}
+
+h1:hover {
+    animation-name: sunriseText;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 #sun {
