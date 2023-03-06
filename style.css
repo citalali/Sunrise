@@ -6,8 +6,8 @@
 }
 
 h1 {
-    font-family:cursive;
-    font-weight:400;
+    font-family: cursive;
+    font-weight: 400;
     font-variant: small-caps;
     color:#064273;
     position: absolute;
@@ -16,12 +16,9 @@ h1 {
 }
 
 @keyframes sunriseText {
-    from {color: #064273;
-        }
+    from {color: #064273;}
     to {color: #ff7b7b;}
-    0%,80% {
-        transform: rotateY(180deg) 
-      }
+    0%,80% {transform: rotateY(180deg);}
 }
 
 h1:hover {
@@ -77,7 +74,6 @@ h1:hover {
     visibility: hidden; 
 }
 
-
 #sunOutest {
     position: absolute;
     width: 45%;
@@ -99,12 +95,12 @@ h1:hover {
     --mask:
     radial-gradient(9.6px at 50% calc(100% + 7.00px),#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) calc(50% - 10px) calc(50% - 3.5px + .5px)/20px 7px ,
     radial-gradient(9.6px at 50% -7px,#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) 50% calc(50% + 3.5px)/20px 7px ;
-  -webkit-mask: var(--mask);
-         mask: var(--mask);
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
 }
 
 @keyframes wavyWaves {
-    from {background-color: #064273;}
+    from {background-color: #000001;}
     to {background-color: #76b6c4;}
 }
 
@@ -118,14 +114,14 @@ h1:hover {
     animation-duration: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-
 }
 
 #oceanBack:hover {
     animation-name: wavyWaves;
     animation-duration: 2s;
     animation-direction: alternate;
-    animation-iteration-count: infinite;} 
+    animation-iteration-count: infinite;
+} 
 
 #oceanBack {
     position: absolute;
@@ -137,8 +133,8 @@ h1:hover {
     --mask:
     radial-gradient(8.60px at 50% 12.00px,#000 99%,#0000 101%) calc(50% - 10px) 0/20px 100%,
     radial-gradient(8.60px at 50% -7px,#0000 99%,#000 101%) 50% 5px/20px 100% repeat-x;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
 }
 
 #waves {
@@ -146,7 +142,6 @@ h1:hover {
     background-color: #def3f6;
     height: 10%;
     width: 100%;
-
 }
 
 html {

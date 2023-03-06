@@ -9,12 +9,12 @@ document.getElementById("sun").onclick = function() {
 };
 
 function sunShine() {
-    function myLoop() {       
+    function myLoop() {  
       setTimeout(function() {  
         document.getElementById(sunStates[i]).style.visibility = visibility;
         i++;                   
         if (i < 4) {          
-          myLoop();           
+            myLoop();           
         }                    
       }, 100)
     }
@@ -22,11 +22,11 @@ function sunShine() {
         visibility = "hidden";
         var i = 0;
         myLoop();
-     }
-     else {
-         visibility = "visible";
-         var i = 0
+    }
+    else {
+        visibility = "visible";
+        var i = 0
         myLoop();  
-     }
+    }
 }
 
