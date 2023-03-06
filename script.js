@@ -5,6 +5,9 @@ var visibility = "visible";
 document.getElementById("sun").onmouseover = function() {
     sunShine()
 };
+document.getElementById("sun").onclick = function() {
+    sunShine()
+};
 
 //document.getElementById("blueBack").onmouseover = function() {
   //  wavyWaves()
