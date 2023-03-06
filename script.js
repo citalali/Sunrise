@@ -1,10 +1,15 @@
 var onOffCounter = 0;
 var mouseOnWater = 0;
-var visibility = "visible";
+var visibility = "hidden";
+const sunStates = ["sunRay", "sunWhite", "sunOuter", "sunOutest"];
 
 document.getElementById("sun").onmouseover = function() {
+    //onOffCounter = 0;
     sunShine()
 };
+//document.getElementById("sun").onmouseleave = function() {
+  //  onOffCounter = 101;
+//};
 document.getElementById("sun").onclick = function() {
     sunShine()
 };
@@ -18,27 +23,26 @@ document.getElementById("sun").onclick = function() {
 //};
 
 function sunShine() {
-
-    setTimeout(() => {
-        document.getElementById("sunRay").style.visibility = visibility;
-    }, 100);
-    setTimeout(() => {
-        document.getElementById("sunWhite").style.visibility = visibility;
-    }, 200);
-    setTimeout(() => {
-        document.getElementById("sunOuter").style.visibility = visibility;
-    }, 300);
-    setTimeout(() => {
-        document.getElementById("sunOutest").style.visibility = visibility;
-    }, 400);
-
+    var i = 0;                  
+    function myLoop() {       
+      setTimeout(function() {  
+        document.getElementById(sunStates[i]).style.visibility = visibility;
+        i++;                   
+        if (i < 4) {          
+          myLoop();           
+        }                    
+      }, 150)
+    }
     if (visibility == "visible"){
         visibility = "hidden";
-    }
-    else {
-        visibility = "visible";
-    }
+     }
+     else {
+         visibility = "visible";
+     }
+    var i = 0
+    myLoop();     
 }
+
 
 
 
